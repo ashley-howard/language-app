@@ -25,12 +25,10 @@ function round1(selection){
     button4.style.border = "#dc3545";
 
     if(selection === 1){
-        // change text
         feedback.innerHTML = "Correct, good job!";
-
     }
     else {
-        feedback.innerHTML = "Sorry, the correct answer is blah";
+        feedback.innerHTML = `Sorry, the correct answer is: ${button1.innerHTML}`;
     }
 
 };
