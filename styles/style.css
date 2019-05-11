@@ -49,3 +49,7 @@ h2.topic {
     color: #4e9cff;
     font-weight: 500;
 }
+
+div.write {
+    justify-content: center;
+}
