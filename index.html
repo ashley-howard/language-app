@@ -1,61 +1,70 @@
 <!doctype html>
 <html lang='en'>
+
 <head>
-<meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
 
-<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
-<link rel="stylesheet" href="/styles/style.css">
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'
+    integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
+  <link rel="stylesheet" href="/styles/style.css">
 
-<title>Linguo</title>
+  <title>Linguo</title>
 </head>
+
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">Linguo</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">About</a>
-          </div>
-        </div>
-      </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Linguo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="#">About</a>
+      </div>
+    </div>
+  </nav>
 
 
-<div class="container">
+  <div class="container">
     <h2 class="topic text-center">Present Tense</h2>
     <h4 class="topic text-center">Question 1</h4>
     <p id="question" class="text-center">This is a question, what do you think is the answer?</p>
     <div class="row">
-        <div class="col-md-6 col-12 answer"><button onclick="round1(1)" type="button" class="btn btn-info" id="button1">This is answer one.</button></div>
-        <div class="col-md-6 col-12 answer"><button onclick="round1(2)" type="button" class="btn btn-info" id="button2">This is answer two.</button></div>
-        <div class="col-md-6 col-12 answer"><button onclick="round1(3)" type="button" class="btn btn-info" id="button3">This is answer three.</button></div>
-        <div class="col-md-6 col-12 answer"><button onclick="round1(4)" type="button" class="btn btn-info" id="button4">This is answer four.</button></div>
-      </div>
-      <p id="feedback" class="text-center"></p>
+      <div class="col-md-6 col-12 answer"><button onclick="round1(1)" type="button" class="btn btn-info"
+          id="button1">This is answer one.</button></div>
+      <div class="col-md-6 col-12 answer"><button onclick="round1(2)" type="button" class="btn btn-info"
+          id="button2">This is answer two.</button></div>
+      <div class="col-md-6 col-12 answer"><button onclick="round1(3)" type="button" class="btn btn-info"
+          id="button3">This is answer three.</button></div>
+      <div class="col-md-6 col-12 answer"><button onclick="round1(4)" type="button" class="btn btn-info"
+          id="button4">This is answer four.</button></div>
+    </div>
+
   </div>
 
-
-  <!-- Footer -->
-<footer class="page-footer font-small blue">
-
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">
-                <a href="write.html" class="btn btn-info" id="continue">Continue</a>
-        </div>
-        <!-- Copyright -->
-      
-      </footer>
-      <!-- Footer -->
+  <footer class="page-footer">
+    <div class="footer-copyright text-center py-3" id="continueDiv">
+      <p id="feedback" class="text-center"></p>
+      <a href="write.html" class="btn btn-info" id="continue">Continue</a>
+    </div>
+  </footer>
 
 
-<!-- Optional JavaScript -->
-<script src="scripts/app.js"></script>
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' crossorigin='anonymous'></script>
-<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous'></script>
+  <!-- Optional JavaScript -->
+  <script src="scripts/app.js"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'
+    integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo'
+    crossorigin='anonymous'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js'
+    integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1'
+    crossorigin='anonymous'></script>
+  <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'
+    integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM'
+    crossorigin='anonymous'></script>
 </body>
+
 </html>

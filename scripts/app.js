@@ -8,6 +8,8 @@ var button4 = document.getElementById("button4");
 
 var feedback = document.getElementById("feedback");
 
+var continueDiv = document.getElementById("continueDiv");
+
 function round1(selection){
     button1.style.background = "#28a745";
     button1.style.border = "#28a745";
@@ -27,16 +29,26 @@ function round1(selection){
     else {
         feedback.innerHTML = `Sorry, the correct answer is: ${button1.innerHTML}`;
     }
+
+        // show continue div
+        continueDiv.style.display = "block";
 };
 
 var userTranslation = document.getElementById("user-translation");
 var correctAnswers = ["I am a man.", "I'm a man.", "I am a man", "I'm a man"];
 
 function translation() {
-    if(correctAnswers.includes(userTranslation.value)){
+    if(userTranslation.value === ''){
+        feedback.innerHTML = feedback.innerHTML = `Please type something.`;
+    }
+    else if(correctAnswers.includes(userTranslation.value)){
         feedback.innerHTML = "Correct, good job!";
+        continueDiv.style.display = "block";
     }
-    else {
+    else if(!correctAnswers.includes(userTranslation.value)){
         feedback.innerHTML = `Sorry, the correct answer is: ${correctAnswers[0]}`;
+        continueDiv.style.display = "block";
     }
+
+    
 };
