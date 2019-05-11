@@ -8,10 +8,7 @@ var button4 = document.getElementById("button4");
 
 var feedback = document.getElementById("feedback");
 
-
 function round1(selection){
-
-    // change colour
     button1.style.background = "#28a745";
     button1.style.border = "#28a745";
 
@@ -30,5 +27,16 @@ function round1(selection){
     else {
         feedback.innerHTML = `Sorry, the correct answer is: ${button1.innerHTML}`;
     }
+};
 
+var userTranslation = document.getElementById("user-translation");
+var correctAnswers = ["I am a man.", "I'm a man.", "I am a man", "I'm a man"];
+
+function translation() {
+    if(correctAnswers.includes(userTranslation.value)){
+        feedback.innerHTML = "Correct, good job!";
+    }
+    else {
+        feedback.innerHTML = `Sorry, the correct answer is: ${correctAnswers[0]}`;
+    }
 };

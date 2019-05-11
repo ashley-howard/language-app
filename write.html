@@ -26,14 +26,16 @@
 
 <div class="container">
     <h2 class="topic text-center">Present Tense: 1</h2>
-    <p id="question" class="text-center">This is a question, what do you think is the answer?</p>
+    <p id="question" class="text-center">Translate into English: <span class="translate-text">Sono un uomo.</span></p>
     <div class="row">
-        <div class="col-md-6 col-12 answer"><button onclick="round1(1)" type="button" class="btn btn-info" id="button1">This is answer one.</button></div>
-        <div class="col-md-6 col-12 answer"><button onclick="round1(2)" type="button" class="btn btn-info" id="button2">This is answer two.</button></div>
-        <div class="col-md-6 col-12 answer"><button onclick="round1(3)" type="button" class="btn btn-info" id="button3">This is answer three.</button></div>
-        <div class="col-md-6 col-12 answer"><button onclick="round1(4)" type="button" class="btn btn-info" id="button4">This is answer four.</button></div>
+
+        Type your answer here:<br>
+          <input type="text" name="firstname" value="" id="user-translation">
+
+          
       </div>
-      <p id="feedback" class="text-center"></p> <!-- This should change to "Correct, good job!" or "Sorry, the correct answer is blah" -->
+      <button onclick="translation()">Check</button>
+      <p id="feedback" class="text-center"></p>
   </div>
 
 
